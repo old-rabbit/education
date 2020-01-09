@@ -1,0 +1,32 @@
+server:
+  port: 8104
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+spring:
+  application:
+    name: system-provider-config
+  cloud:
+    config:
+      server:
+         git:
+           password: kxf20131125
+           username: old-rabbit
+           uri: https://github.com/old-rabbit/educationConfig.git
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/1906d?useUnicode=true&characterEncoding=utf-8
+  redis:
+    host: localhost
+    port: 6379
+  mongodb:
+    database: loger
+    host: localhost
+    port: 27017
+mybatis:
+  config-locations: classpath:mapping/confg.xml
+  mapper-locations: classpath:mapping/mapper/*.xml
+  type-aliases-package: com.jk.do

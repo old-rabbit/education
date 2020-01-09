@@ -1,0 +1,24 @@
+server:
+  port: 8103
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+spring:
+  application:
+    name: system-feign-config
+  cloud:
+    config:
+      server:
+         git:
+           password: kxf20131125
+           username: old-rabbit
+           uri: https://github.com/old-rabbit/educationConfig.git
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    prefix: classpath:/templates/
+    suffix: .html    
+feign:
+  hystrix:
+    enabled: true

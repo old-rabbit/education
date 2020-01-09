@@ -1,0 +1,28 @@
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+spring:
+  application:
+    name: course-feign-config
+  cloud:
+    config:
+      server:
+         git:
+           password: kxf20131125
+           username: old-rabbit
+           uri: https://github.com/old-rabbit/educationConfig.git
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: my-course
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    prefix: classpath:/templates/
+    suffix: .html    
+feign:
+  hystrix:
+    enabled: true
