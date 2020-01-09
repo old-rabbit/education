@@ -13,7 +13,7 @@ spring:
          git:
            password: kxf20131125
            username: old-rabbit
-           uri: https://github.com/old-rabbit/educationConfig.git
+           uri: https://github.com/old-rabbit/education.git
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
