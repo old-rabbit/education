@@ -14,11 +14,15 @@ spring:
            password: kxf20131125
            username: old-rabbit
            uri: https://github.com/old-rabbit/education.git
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9200
+      cluster-name: my-user
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
     prefix: classpath:/templates/
-    suffix: .html    
+    suffix: .html   
 feign:
   hystrix:
     enabled: true
