@@ -22,6 +22,10 @@ spring:
   redis:
     host: localhost
     port: 6379
+  mongodb:
+    database: education
+    host: localhost
+    port: 27017
 mybatis:
   config-locations: classpath:mapping/confg.xml
   mapper-locations: classpath:mapping/mapper/*.xml

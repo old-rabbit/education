@@ -23,7 +23,7 @@ spring:
     host: localhost
     port: 6379
   mongodb:
-    database: loger
+    database: education
     host: localhost
     port: 27017
 mybatis:
